@@ -1,4 +1,28 @@
 <<<<<<< HEAD
+
+# TP Jest con NestJS
+
+Este proyecto contiene la entrega del trabajo práctico de Jest para el curso de backend con NestJS.
+
+## 📦 Contenido
+
+- Test unitario del controlador (`notebooks.controller.spec.ts`)
+- Test unitario del servicio (`notebooks.service.spec.ts`)
+- Test de integración (`notebooks.int.spec.ts`)
+- Test end-to-end (`notebooks.e2e-spec.ts`)
+- Cobertura 100% del controlador verificada en consola
+- Documentación accesible para principiantes
+
+## 🚀 Cómo correr los tests
+
+```bash
+npm install
+npm run test
+npm run test:cov
+
+##################################################################################################################################
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
@@ -116,3 +140,10 @@ npm install
 npm run test
 npm run test:cov
 >>>>>>> 7186eae764f185b92d0221d0addfdbad6e8fc3c8
+
+
+
+
+
+
+
