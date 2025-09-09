@@ -15,10 +15,11 @@ Este proyecto contiene la entrega del trabajo práctico de Jest para el curso de
 
 ## 🚀 Cómo correr los tests
 
-```bash
+
 npm install
 npm run test
 npm run test:cov
+
 
 ##################################################################################################################################
 
