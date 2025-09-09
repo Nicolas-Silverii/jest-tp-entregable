@@ -1,4 +1,3 @@
-// create-notebook.dto.ts
 import { IsString, IsNotEmpty } from 'class-validator';
 
 export class CreateNotebookDto {
@@ -7,5 +6,6 @@ export class CreateNotebookDto {
   title: string;
 
   @IsString()
+  @IsNotEmpty()
   content: string;
 }

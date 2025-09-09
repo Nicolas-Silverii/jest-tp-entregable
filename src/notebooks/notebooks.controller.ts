@@ -1,4 +1,3 @@
-// notebooks.controller.ts
 import {
   Controller,
   Get,
@@ -6,6 +5,8 @@ import {
   Body,
   HttpException,
   HttpStatus,
+  UsePipes,
+  ValidationPipe,  
 } from '@nestjs/common';
 import { NotebooksService } from './notebooks.service';
 import { CreateNotebookDto } from './dto/create-notebook.dto';
@@ -28,13 +29,14 @@ export class NotebooksController {
   }
 
   @Post()
+  @UsePipes(new ValidationPipe({ transform: true }))  
   async create(@Body() createNotebookDto: CreateNotebookDto): Promise<Notebook> {
     try {
       return await this.notebooksService.create(createNotebookDto);
     } catch (error) {
       throw new HttpException(
         'Error creating notebook',
-        HttpStatus.BAD_REQUEST,
+        HttpStatus.BAD_REQUEST,  
       );
     }
   }
